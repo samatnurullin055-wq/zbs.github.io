@@ -397,7 +397,7 @@
 
   <script>
     const K={u:'stogram_users',p:'stogram_posts',f:'stogram_follows',n:'stogram_notifs',vr:'stogram_verify_requests',c:'stogram_current',seed:'stogram_seed_v5',theme:'stogram_theme',feedMode:'stogram_feed_mode'};
-    const API_BASE='http://127.0.0.1:8000/api';
+    const API_BASE='https://zbs-github-io.onrender.com';
     const qs=s=>document.querySelector(s), qsa=s=>document.querySelectorAll(s);
     const el={
       auth:qs('#auth'),app:qs('#app'),msg:qs('#authMsg'),loginF:qs('#loginF'),regF:qs('#regF'),tabs:qsa('.tab'),
@@ -438,6 +438,7 @@
     const MAX_VIDEO_BYTES=8*1024*1024;
     const MAX_IMAGE_BYTES=12*1024*1024;
     const MAX_AVATAR_BYTES=4*1024*1024;
+
 
     function setTheme(theme){
       const t=theme||localStorage.getItem(K.theme)||'light';
